@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
+      bungee: ['"Bungee Outline"', 'cursive'],
       montserrat: ["Montserrat"],
       swashed: ["Sansita Swashed", "cursive"],
       spectral: ["Spectral", "serif"],

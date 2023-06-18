@@ -1,9 +1,21 @@
 import React from 'react';
 
+import AboutUi from '../pages/About/AboutUi';
+import HeroSection from '../pages/HeroSection/HeroSection';
+import Skill from '../pages/Skill/Skill';
+import Contact from '../pages/Contact/Contact';
+import Projects from '../pages/Projects/Projects';
+import MarqueeElement from '../pages/Marquee/MarqueeElement';
+
 const HomePage = () => {
     return (
         <div>
-            <h2 className='text-5xl font-bold text-gray-800'>This is Homepage</h2>
+            <HeroSection/>
+            <AboutUi/>
+            <Skill/>
+            <Projects/>
+            <Contact/>
+            <MarqueeElement/>
         </div>
     );
 };

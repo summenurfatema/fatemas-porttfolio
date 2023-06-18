@@ -1,0 +1,12 @@
+.card {
+    background-image: linear-gradient(
+        255deg,
+        hsl(256deg 56% 41%) 0%,
+        hsl(259deg 57% 42%) 25%,
+        hsl(261deg 58% 43%) 33%,
+        hsl(264deg 59% 44%) 43%,
+        hsl(267deg 60% 44%) 100%
+      )
+  }
+
+ 
