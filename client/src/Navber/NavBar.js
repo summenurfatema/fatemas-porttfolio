@@ -3,12 +3,12 @@ import React, { useState } from "react";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div id="nav" class=" text-white z-50">
+    <div id="nav" class=" text-white z-50 font-sans">
       <div class="px-4 py-5  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-14  lg:px-12 xl:px-0 lg:py-[26px]">
         <div class="relative flex items-center justify-between ">
           <a href="/">
-            <span class="ml-2 text-xl md:text-[20px] lg:text-[48px] font-bold tracking-wide text-white  capitalize">
-              Fatema<span className="text-[#8670EF] text-[70px]">.</span>
+            <span class="ml-2 text-xl md:text-[20px] lg:text-[48px] font-bold tracking-wide text-white  capitalize font-bungee">
+              Fatema<span className="text-[#0CABEF] text-[60px] pl-2">.</span>
             </span>
           </a>
           <ul class="flex  items-center hidden space-x-[50px] lg:flex ">
@@ -29,11 +29,11 @@ const NavBar = () => {
 
             <li>
               <a
-                href="#skills"
+                href="#skill"
                 className="font-medium text-[18px] tracking-wide text-white "
                 onClick={(e) => {
                   e.preventDefault();
-                  const contactSection = document.getElementById("skills");
+                  const contactSection = document.getElementById("skill");
                   contactSection.scrollIntoView({ behavior: "smooth" });
                   setTimeout(() => contactSection.focus(), 900);
                 }}
@@ -46,11 +46,11 @@ const NavBar = () => {
             
             <li>
               <a
-                href="#works"
+                href="#project"
                 className="font-medium text-[18px] tracking-wide text-white "
                 onClick={(e) => {
                   e.preventDefault();
-                  const teamSection = document.getElementById("contact");
+                  const teamSection = document.getElementById("project");
                   teamSection.scrollIntoView({ behavior: "smooth" });
                   setTimeout(() => teamSection.focus(), 900);
                 }}
@@ -60,7 +60,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#blog"
+                href="/"
                 className="font-medium text-[18px] tracking-wide text-white "
                 onClick={(e) => {
                   e.preventDefault();
@@ -74,14 +74,9 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#works"
-                className="font-semibold text-[20px] tracking-wide text-white bg-[#8670EF] px-5 py-3 rounded-lg"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const teamSection = document.getElementById("works");
-                  teamSection.scrollIntoView({ behavior: "smooth" });
-                  setTimeout(() => teamSection.focus(), 900);
-                }}
+                href="#contact"
+                className="font-semibold text-[20px] tracking-wide text-white back px-5 py-3 rounded-lg"
+                
               >
                 Contact
               </a>

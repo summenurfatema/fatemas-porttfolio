@@ -1,12 +1,64 @@
 .card {
-    background-image: linear-gradient(
-        255deg,
-        hsl(256deg 56% 41%) 0%,
-        hsl(259deg 57% 42%) 25%,
-        hsl(261deg 58% 43%) 33%,
-        hsl(264deg 59% 44%) 43%,
-        hsl(267deg 60% 44%) 100%
-      )
+    background-color:#067bad;
   }
+.back {
+    background-image: linear-gradient(to right bottom, #4ec2f4, #3fa8d8, #2f8fbd, #1e77a1, #086087);
+  }
+  button {
+    height: 2.8em;
+    width: 9em;
+    background: transparent;
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 19px;
+   }
+   
+   button:hover {
+    background: #016DD9;
+    color: #ffffff;
+    animation: squeeze3124 0.9s both;
+   }
+   
+   @keyframes squeeze3124 {
+    0% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   
+    30% {
+     -webkit-transform: scale3d(1.25, 0.75, 1);
+     transform: scale3d(1.25, 0.75, 1);
+    }
+   
+    40% {
+     -webkit-transform: scale3d(0.75, 1.25, 1);
+     transform: scale3d(0.75, 1.25, 1);
+    }
+   
+    50% {
+     -webkit-transform: scale3d(1.15, 0.85, 1);
+     transform: scale3d(1.15, 0.85, 1);
+    }
+   
+    65% {
+     -webkit-transform: scale3d(0.95, 1.05, 1);
+     transform: scale3d(0.95, 1.05, 1);
+    }
+   
+    75% {
+     -webkit-transform: scale3d(1.05, 0.95, 1);
+     transform: scale3d(1.05, 0.95, 1);
+    }
+   
+    100% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   }
+   
+  
 
  

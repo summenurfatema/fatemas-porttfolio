@@ -1,8 +1,9 @@
 import React from 'react';
-
+import blob from '../../assets/blob.png'
+import LazyDiv from '../LazyDiv/LazyDiv';
 const HeroSection = () => {
     return (
-        <div className='flex fex-col justify-between items-center px-5 py-5 md:px-14  lg:px-12 xl:px-20 md:py-10 3xl:h-screen'>
+        <div className='flex fex-col justify-between items-center px-5 py-5 md:px-14  lg:px-12 xl:px-20 md:py-10 3xl:h-screen relative'>
 
             <div className='w-full md:w-1/2 space-y-4'>
                 <h1 className='text-white text-6xl'>Hi ! I Am </h1>
@@ -14,11 +15,10 @@ const HeroSection = () => {
 
             <div className='w-full md:w-1/2  relative'>
             
-            <div className='h-64 w-64 bg-[#FCD966] rounded-full absolute right-28 bottom-10'></div>
-            <div className='h-64 w-64 bg-[#8670EF] rounded-full absolute right-5 -bottom-20'></div>
+           <img src={blob} alt='blob'/>
 
             </div>
-            
+            <LazyDiv className='' />
         </div>
     );
 };

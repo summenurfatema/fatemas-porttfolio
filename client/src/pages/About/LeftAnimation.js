@@ -13,7 +13,7 @@ import { EffectCards } from "swiper";
 
 export default function LeftAnimation() {
   return (
-    <>
+    <div className="relative">
 
       <Swiper
         autoplay={{
@@ -57,8 +57,9 @@ export default function LeftAnimation() {
           <h1>Developer</h1>
         </SwiperSlide>
       </Swiper>
-      <h1 className='text-gray-800 text-3xl my-7 text-center font-semibold'>Can play role as a <span className='h-5 w-10'>___</span></h1>
+     
+      <h1 className='text-white text-3xl my-7 text-center font-semibold'>Can play role as a <span className='h-5 w-10'>___</span></h1>
     
-    </>
+    </div>
   );
 }
