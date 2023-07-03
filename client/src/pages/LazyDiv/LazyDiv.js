@@ -69,7 +69,7 @@ const LazyDiv = () => {
   return (
     <>
       {currentText && (
-        <div data-aos="fade-left" className="popup bg-white px-5 py-10 flex-flex-col items-center justify-center rounded-2xl absolute right-20 top-10 w-[600px]">
+        <div data-aos="fade-left" className="popup bg-white px-5 py-10 flex-flex-col items-center justify-center rounded-2xl absolute right-20 top-10 w-10/12 lg:w-[600px]">
           <BsPatchMinusFill  onClick={closePopup} className="text-2xl text-[#067bad] relative -right-[500px] -top-5 cursor-pointer"/>
           <div className="popup-content">
             <div className=" w-full ">
@@ -81,11 +81,15 @@ const LazyDiv = () => {
               />
             </div>
             {currentTime && (
-              <p className="font-bold glow text-sm font-swashed xl:text-2xl text-gray-800 pb-3 text-center">
+              <p className="font-bold glow text-[24px] font-swashed xl:text-2xl text-gray-800 pb-3 text-center">
                 Time : {currentTime}
               </p>
             )}
-            <p className="text-[24px] leading-10 font-swashed tracking-wide text-gray-800 px-10 text-center py-5">{currentText}</p>
+
+<p className="font-bold glow text-[24px] font-swashed xl:text-2xl text-gray-800 pb-3 text-center">
+                Reminder of the day
+              </p>
+            <p className="text-[28px] leading-10 font-swashed tracking-wide text-gray-800 px-10 text-center py-5">{currentText}</p>
             
           </div>
         </div>

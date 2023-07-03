@@ -37,8 +37,30 @@ body {
 }
 
 .swiper {
-  width: 280px;
-  height: 360px;
+  width: 260px; /* Set the width to 220px for desktop devices */
+  height: 300px; /* Allow the height to adjust based on content */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .swiper {
+    width: 100%; /* Set the width to 100% for mobile devices */
+    height: auto; /* Allow the height to adjust based on content */
+  }
+}
+
+/* Media query for desktop devices */
+@media (min-width: 768px) {
+  .swiper {
+    width: 300px; /* Set the width to 220px for desktop devices */
+    height: 320px;
+  }
+}
+@media (min-width: 1280px) {
+  .swiper {
+    width: 330px; /* Set the width to 220px for desktop devices */
+    height: 360px;
+  }
 }
 
 .swiper-slide {

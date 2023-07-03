@@ -4,18 +4,18 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div id="nav" class=" text-white z-50 font-sans">
-      <div class="px-4 py-5  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-14  lg:px-12 xl:px-0 lg:py-[26px]">
+      <div class="px-4 py-5  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-14  lg:px-12 xl:px-10 2xl:px-10 3xl:px-14 lg:py-[26px]">
         <div class="relative flex items-center justify-between ">
           <a href="/">
-            <span class="ml-2 text-xl md:text-[20px] lg:text-[48px] font-bold tracking-wide text-white  capitalize font-bungee">
-              Fatema<span className="text-[#0CABEF] text-[60px] pl-2">.</span>
+            <span class="ml-2 text-[26px] md:text-[38px] lg:text-[48px] 6xl:text-[59px] font-bold tracking-wide text-white  capitalize font-bungee">
+              Fatema<span className="text-[#0CABEF] text-2xl md:text-4xl lg:text-[60px] pl-2">.</span>
             </span>
           </a>
           <ul class="flex  items-center hidden space-x-[50px] lg:flex ">
             <li>
               <a
                 href="#about"
-                className="font-medium text-[18px] tracking-wide text-white "
+                className="font-medium text-[18px] 6xl:text-[24px] tracking-wide text-white "
                 onClick={(e) => {
                   e.preventDefault();
                   const aboutSection = document.getElementById("about");
@@ -29,11 +29,11 @@ const NavBar = () => {
 
             <li>
               <a
-                href="#skill"
-                className="font-medium text-[18px] tracking-wide text-white "
+                href="#skills"
+                className="font-medium text-[18px] 6xl:text-[24px] tracking-wide text-white "
                 onClick={(e) => {
                   e.preventDefault();
-                  const contactSection = document.getElementById("skill");
+                  const contactSection = document.getElementById("skills");
                   contactSection.scrollIntoView({ behavior: "smooth" });
                   setTimeout(() => contactSection.focus(), 900);
                 }}
@@ -46,11 +46,11 @@ const NavBar = () => {
             
             <li>
               <a
-                href="#project"
-                className="font-medium text-[18px] tracking-wide text-white "
+                href="#works"
+                className="font-medium text-[18px] 6xl:text-[24px] tracking-wide text-white "
                 onClick={(e) => {
                   e.preventDefault();
-                  const teamSection = document.getElementById("project");
+                  const teamSection = document.getElementById("works");
                   teamSection.scrollIntoView({ behavior: "smooth" });
                   setTimeout(() => teamSection.focus(), 900);
                 }}
@@ -60,11 +60,11 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="/"
-                className="font-medium text-[18px] tracking-wide text-white "
+                href="#blogs"
+                className="font-medium text-[18px] 6xl:text-[24px] tracking-wide text-white "
                 onClick={(e) => {
                   e.preventDefault();
-                  const blogSection = document.getElementById("blog");
+                  const blogSection = document.getElementById("blogs");
                   blogSection.scrollIntoView({ behavior: "smooth" });
                   setTimeout(() => blogSection.focus(), 900);
                 }}
@@ -76,7 +76,12 @@ const NavBar = () => {
               <a
                 href="#contact"
                 className="font-semibold text-[20px] tracking-wide text-white back px-5 py-3 rounded-lg"
-                
+                onClick={(e) => {
+                  e.preventDefault();
+                  const contactSection = document.getElementById("contact");
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                  setTimeout(() => contactSection.focus(), 900);
+                }}
               >
                 Contact
               </a>
@@ -108,12 +113,14 @@ const NavBar = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <a href="/" class="inline-flex items-center">
-                        <span class="text-xl font-bold tracking-wide text-gray-800  uppercase">
-                          Sneha Poddar
-                        </span>
-                      </a>
+                    <a href="/">
+            <span class="ml-2 text-[29px] md:text-[38px] lg:text-[48px] 6xl:text-[59px] font-bold tracking-wide text-black capitalize font-bungee">
+              Fatema<span className="text-[#0CABEF] text-2xl md:text-4xl lg:text-[60px] pl-2">.</span>
+            </span>
+          </a>
+          
                     </div>
+                    <button className="text-xl text-white rounded-full font-bungee bg-gray-400 hover:text-black hover:bg-gray-200 cursor-pointer py-1 px-3">X</button>
                   </div>
                   <nav>
                     <ul class="space-y-4">
@@ -135,40 +142,40 @@ const NavBar = () => {
                       </li>
                       <li>
                         <a
-                          href="#blog"
+                          href="#skills"
                           className="font-medium text-xl tracking-wide text-gray-800 "
                           onClick={(e) => {
                             e.preventDefault();
                             setIsMenuOpen(false);
-                            const blogSection = document.getElementById("blog");
+                            const blogSection = document.getElementById("skills");
                             blogSection.scrollIntoView({ behavior: "smooth" });
                             setTimeout(() => blogSection.focus(), 900);
                           }}
                         >
-                          Blog
+                          skills
                         </a>
                       </li>
                       <li>
                         <a
-                          href="#consult"
+                          href="#works"
                           className="font-medium text-xl tracking-wide text-gray-800 "
                           onClick={(e) => {
                             e.preventDefault();
                             setIsMenuOpen(false);
                             const contactSection =
-                              document.getElementById("consult");
+                              document.getElementById("works");
                             contactSection.scrollIntoView({
                               behavior: "smooth",
                             });
                             setTimeout(() => contactSection.focus(), 900);
                           }}
                         >
-                          Consult
+                          Works
                         </a>
                       </li>
                       <li>
                         <a
-                          href="#team"
+                          href="#blogs"
                           className="font-medium text-xl tracking-wide text-gray-800 "
                           onClick={(e) => {
                             e.preventDefault();
@@ -178,9 +185,23 @@ const NavBar = () => {
                             setTimeout(() => teamSection.focus(), 900);
                           }}
                         >
-                          Join the team
+                          Blogs
                         </a>
                       </li>
+                      <li>
+              <a
+                href="#contact"
+                className="font-medium text-xl tracking-wide text-white back px-6 py-2 rounded-lg"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const contactSection = document.getElementById("contact");
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                  setTimeout(() => contactSection.focus(), 900);
+                }}
+              >
+                Contact
+              </a>
+            </li>
                     
                     </ul>
                   </nav>

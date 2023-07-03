@@ -4,7 +4,7 @@
 .back {
     background-image: linear-gradient(to right bottom, #4ec2f4, #3fa8d8, #2f8fbd, #1e77a1, #086087);
   }
-  button {
+  .common {
     height: 2.8em;
     width: 9em;
     background: transparent;
@@ -16,7 +16,7 @@
     font-size: 19px;
    }
    
-   button:hover {
+   .common:hover {
     background: #016DD9;
     color: #ffffff;
     animation: squeeze3124 0.9s both;

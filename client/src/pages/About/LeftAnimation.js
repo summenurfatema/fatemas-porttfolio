@@ -27,7 +27,10 @@ export default function LeftAnimation() {
         modules={[EffectCards, Autoplay]}
         className="mySwiper mt-20"
       >
-        <SwiperSlide>React Developer</SwiperSlide>
+        <SwiperSlide>
+        <h1>React</h1>
+          <h1>Developer</h1>
+        </SwiperSlide>
         <SwiperSlide>
           <h1>Front-end</h1>
           <h1>Developer</h1>
@@ -38,7 +41,10 @@ export default function LeftAnimation() {
             <h1>Developer</h1>
           </SwiperSlide>
         </SwiperSlide>
-        <SwiperSlide>React Developer</SwiperSlide>
+        <SwiperSlide>
+        <h1>React</h1>
+          <h1>Developer</h1>
+        </SwiperSlide>
         <SwiperSlide>
           <h1>Front-end</h1>
           <h1>Developer</h1>
@@ -47,7 +53,10 @@ export default function LeftAnimation() {
           <h1>MERN Stack</h1>
           <h1>Developer</h1>
         </SwiperSlide>
-        <SwiperSlide>React Developer</SwiperSlide>
+        <SwiperSlide>
+        <h1>React</h1>
+          <h1>Developer</h1>
+        </SwiperSlide>
         <SwiperSlide>
           <h1>Front-end</h1>
           <h1>Developer</h1>
@@ -58,7 +67,7 @@ export default function LeftAnimation() {
         </SwiperSlide>
       </Swiper>
      
-      <h1 className='text-white text-3xl my-7 text-center font-semibold'>Can play role as a <span className='h-5 w-10'>___</span></h1>
+      <h1 className='text-white text-xl md:text-2xl lg:text-3xl 3xl:text-4xl  my-7 text-center'>Can play role as a <span className='h-5 w-10'>___</span></h1>
     
     </div>
   );

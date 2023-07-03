@@ -15,10 +15,10 @@ const HomePage = () => {
           
             <HeroSection/>
             <AboutUi/>
-            <Skill/>
-            <Projects/>
-            <Contact/>
-            <MarqueeElement/>
+             <Skill/>
+           <Projects/>
+              <Contact/>
+           <MarqueeElement/> 
          
          
         </div>
