@@ -2,7 +2,8 @@ import Lottie from "lottie-react";
 import React, { useEffect, useState } from "react";
 import clock from "../../lottie/7236-clock-seamless-animation.json";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
+ // You can also use <link> for styles
 // ..
 import {BsPatchMinusFill} from 'react-icons/bs'
 

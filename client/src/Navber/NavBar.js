@@ -60,14 +60,9 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#blogs"
+                href="/"
                 className="font-medium text-[18px] 6xl:text-[24px] tracking-wide text-white "
-                onClick={(e) => {
-                  e.preventDefault();
-                  const blogSection = document.getElementById("blogs");
-                  blogSection.scrollIntoView({ behavior: "smooth" });
-                  setTimeout(() => blogSection.focus(), 900);
-                }}
+               
               >
                 Blogs
               </a>
@@ -175,15 +170,9 @@ const NavBar = () => {
                       </li>
                       <li>
                         <a
-                          href="#blogs"
+                          href="/"
                           className="font-medium text-xl tracking-wide text-gray-800 "
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setIsMenuOpen(false);
-                            const teamSection = document.getElementById("team");
-                            teamSection.scrollIntoView({ behavior: "smooth" });
-                            setTimeout(() => teamSection.focus(), 900);
-                          }}
+                         
                         >
                           Blogs
                         </a>
