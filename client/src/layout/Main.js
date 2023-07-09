@@ -4,7 +4,7 @@ import NavBar from '../Navber/NavBar';
 import './main.css'
 const Main = () => {
     return (
-        <div id='main' className='font-sans'>
+        <div id='homes' className='font-sans w-100vw '>
             <NavBar/>
             <HomePage/>
         </div>

@@ -4,6 +4,7 @@ import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
 import { BsArrowUpRight } from "react-icons/bs";
 import './project.css'
+import ModalProject from "./ModalProject";
 const Projects = () => {
   return (
     <div id="works" className="px-5 pt-5 pb-20 md:px-14  lg:px-12 xl:px-20 md:py-10 relative">
@@ -51,11 +52,14 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <label  htmlFor='my_modal_4'>
       <div className="h-24 w-24 lg:h-40 lg:w-40 border  border-gray-500 hover:pl-2  hover:pt-2 rounded-full absolute right-5 -bottom-10 lg::bottom-5">
                 <div className="h-20 w-20 lg:h-36 lg:w-36  rounded-full hover:scale-110 duration-100 back flex flex-col justify-center items-center">
                   <h1 className="text-sm lg:text-xl text-white font-bold uppercase">View all</h1>
                 </div>
               </div>
+         </label>
+         <ModalProject/>
     </div>
   );
 };

@@ -15,8 +15,8 @@ const HomePage = () => {
           
             <HeroSection/>
             <AboutUi/>
-             <Skill/>
-           <Projects/>
+             <Skill/> 
+         <Projects/>
               <Contact/>
            <MarqueeElement/> 
          

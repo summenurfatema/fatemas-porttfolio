@@ -1,5 +1,7 @@
-#main {
-    background-image: linear-gradient(to right top, #131926, #111724, #0f1523, #0d1321, #0b1120);
+#homes {
+  
+ overflow-x: hidden;
+  background-image: linear-gradient(to right top, #131926, #111724, #0f1523, #0d1321, #0b1120);
   }
   /*  background-image: linear-gradient(to right, #4d2d77, #42266e, #371f64, #2b185b, #201252); */
   /* background-image: linear-gradient(

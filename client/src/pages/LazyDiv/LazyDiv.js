@@ -70,27 +70,27 @@ const LazyDiv = () => {
   return (
     <>
       {currentText && (
-        <div data-aos="fade-left" className="popup bg-white px-5 py-10 flex-flex-col items-center justify-center rounded-2xl absolute right-20 top-10 w-10/12 lg:w-[600px]">
-          <BsPatchMinusFill  onClick={closePopup} className="text-2xl text-[#067bad] relative -right-[500px] -top-5 cursor-pointer"/>
+        <div data-aos="zoom-in" className="popup bg-white px-5 py-7 flex-flex-col items-center justify-center rounded-2xl absolute lg:right-20 top-10 w-10/12 lg:w-[600px]">
+          <BsPatchMinusFill  onClick={closePopup} className="text-2xl text-[#067bad] relative  top-0 lg:-top-5  cursor-pointer"/>
           <div className="popup-content">
             <div className=" w-full ">
               <Lottie
                 data-aos="zoom-out-left"
                 loop={true}
-                className="w-1/2 ml-28"
+                className="md:w-1/2 md:ml-36  lg:ml-28"
                 animationData={clock}
               />
             </div>
             {currentTime && (
-              <p className="font-bold glow text-[24px] font-swashed xl:text-2xl text-gray-800 pb-3 text-center">
+              <p className="font-bold glow text-[22px] lg:text-[24px] font-swashed xl:text-2xl text-gray-800 pb-3 text-center">
                 Time : {currentTime}
               </p>
             )}
 
-<p className="font-bold glow text-[24px] font-swashed xl:text-2xl text-gray-800 pb-3 text-center">
+<p className="font-bold glow text-[22px] lg:text-[24px] font-swashed xl:text-2xl text-gray-800 pb-0 lg:pb-3 text-center">
                 Reminder of the day
               </p>
-            <p className="text-[28px] leading-10 font-swashed tracking-wide text-gray-800 px-10 text-center py-5">{currentText}</p>
+            <p className="text-[17px] lg:text-[28px] leading-10 font-swashed tracking-wide text-gray-800 px-10 text-center py-5">{currentText}</p>
             
           </div>
         </div>
