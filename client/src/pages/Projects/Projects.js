@@ -2,6 +2,8 @@ import React from "react";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
+import omni from "../../assets/omniverse.life_.png";
+import sneha from "../../assets/snehapoddar.com_.png";
 import { BsArrowUpRight } from "react-icons/bs";
 import './project.css'
 import ModalProject from "./ModalProject";
@@ -14,28 +16,28 @@ const Projects = () => {
       <div className="flex flex-col lg:flex-row justify-between lg:justify-evenly items-center">
         {/* 1 */}
         <div className=" border-t-2 border-white mt-6 lg:mt-60">
-          <a href="https://clinquant-melomakarona-e44230.netlify.app" target="blank"className="flex items-center space-x-4 my-4 relative">
+          <a href="https://omniverse.life/" target="blank"className="flex items-center space-x-4 my-4 relative">
             <>
               <BsArrowUpRight className="text-white text-3xl absolute left-6 top-2 font-bold" />
               <div className="h-12 w-12 bg-[#067bad] rounded-full"></div>
             </>
-            <p className="text-white text-xl lg:text-3xl  font-semibold">CELO</p>
+            <p className="text-white text-xl lg:text-3xl  font-semibold">OMNIVERSE</p>
           </a>
           <div className="">
-          <img src={project2} alt="" className=" h-72 w-96 " />
+          <img src={omni} alt="" className=" h-72 w-96 " />
           </div>
         </div>
         {/* 2 */}
         <div className=" border-t-2 border-white mt-10 lg:mt-0 ">
-          <a href='https://jazzy-cocada-2d1a25.netlify.app' target='blank' className="flex items-center space-x-4 my-4 relative">
+          <a href='https://snehapoddar.com/' target='blank' className="flex items-center space-x-4 my-4 relative">
             <>
               <BsArrowUpRight className="text-white text-3xl absolute left-6 top-2 font-bold" />
               <div className="h-12 w-12 bg-[#067bad] rounded-full"></div>
             </>
-            <p className="text-white text-xl lg:text-3xl font-semibold">EARTHLY</p>
+            <p className="text-white text-xl lg:text-3xl font-semibold">SNEHA PODDAR</p>
           </a>
           <div className="">
-          <img src={project3} alt="" className=" h-72 w-96" />
+          <img src={sneha} alt="" className=" h-72 w-96" />
           </div>
         </div>
         {/* 3 */}

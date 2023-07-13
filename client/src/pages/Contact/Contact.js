@@ -8,29 +8,17 @@ const Contact = () => {
  
   const form = useRef();
 
- 
-
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
 
-    emailjs
-      .sendForm(
-        "service_bjokw1a",
-        "template_fatema",
-        form.current,
-        "wsGx46LaoIgI5AnHf"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          toast.success("Your message has been sent successfully !!!");
+    emailjs.sendForm('service_bjokw1a', 'template_fatema', form.current, 'wsGx46LaoIgI5AnHf')
+      .then((result) => {
+          console.log(result.text);
+          toast.success('Your message has been successfully !!!')
           form.current.reset();
-        },
-        (error) => {
-          alert(error.text);
-        }
-      );
+      }, (error) => {
+          console.log(error.text);
+      });
   };
   return (
     <div id='contact' className='px-5 pb-5 pt-14 md:px-14  lg:px-12 xl:px-20 md:py-16'>
@@ -72,11 +60,11 @@ const Contact = () => {
                   placeholder="Your Messege"
                 ></textarea>
               </div>
-              <div className="h-24 w-24 lg:h-40 lg:w-40 border  border-gray-500 hover:pl-2  hover:pt-2 rounded-full ">
+              <button type='submit' className="h-24 w-24 lg:h-40 lg:w-40 border  border-gray-500 hover:pl-2  hover:pt-2 rounded-full ">
                 <div className="h-20 w-20 lg:h-36 lg:w-36  rounded-full hover:scale-110 duration-200  back flex flex-col justify-center items-center">
                   <h1 className="text-sm lg:text-xl text-white font-bold uppercase">Send</h1>
                 </div>
-              </div>
+              </button>
             </form>
           </div>
         </div>

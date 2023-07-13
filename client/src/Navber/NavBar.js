@@ -60,7 +60,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="/blogs"
                 className="font-medium text-[18px] 6xl:text-[24px] tracking-wide text-white "
                
               >
@@ -170,7 +170,7 @@ const NavBar = () => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/blogs"
                           className="font-medium text-xl tracking-wide text-gray-800 "
                          
                         >

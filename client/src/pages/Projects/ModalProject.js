@@ -2,27 +2,41 @@ import React from "react";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
+import omni from '../../assets/omniverse.life_.png'
+import sneha from '../../assets/snehapoddar.com_.png'
 import { BsArrowUpRight } from "react-icons/bs";
 
 const ModalProject = () => {
   const projects = [
     {
       id: 1,
-      name: "celo",
-      image: project2,
-      link: "",
+      name: "Omniverse",
+      image:omni ,
+      link: "https://omniverse.life/",
     },
     {
       id: 2,
-      name: "earthly",
-      image: project3,
-      link: "",
+      name: "Sneha P",
+      image: sneha,
+      link: "https://snehapoddar.com/",
     },
     {
       id: 3,
-      name: "learning bee",
+      name: "celo",
+      image: project2,
+      link: "https://clinquant-melomakarona-e44230.netlify.app",
+    },
+    {
+      id: 4,
+      name: "earthly",
+      image: project3,
+      link: "https://reliable-alfajores-36a3cf.netlify.app",
+    },
+    {
+      id:5,
+      name: "learning B",
       image: project1,
-      link: "",
+      link: "https://eloquent-elf-d6f868.netlify.app",
     },
    
   ];
