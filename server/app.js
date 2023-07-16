@@ -1,4 +1,4 @@
-const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
+const { MongoClient } = require('mongodb');
 const express = require('express');
 const app = express()
 const uri = `mongodb+srv://stuStore:VXTomQtNdUF7POjC@cluster0.6v5oj5d.mongodb.net/?retryWrites=true&w=majority`;
