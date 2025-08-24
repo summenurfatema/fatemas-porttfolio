@@ -25,7 +25,7 @@ const AboutUi = () => {
           you can know more about me.
         </p>
         <a
-          href="Fatema-Summe-Nur-resume.pdf"
+          href="Fatema-Summenur-CV.pdf"
           download="Fatema Summenur |Resume.pdf"
           className=""
         >

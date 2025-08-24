@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.5205b89f.css",
-    "main.js": "/static/js/main.50dc6f05.js",
+    "main.css": "/static/css/main.b3ff9b9d.css",
+    "main.js": "/static/js/main.a73aea85.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/omniverse.life_.png": "/static/media/omniverse.life_.99a74090d9528958298d.png",
     "static/media/project1.png": "/static/media/project1.9be9225a39383d8ff4b6.png",
     "static/media/snehapoddar.com_.png": "/static/media/snehapoddar.com_.c758f994bbdd0baa6c29.png",
     "static/media/bgShape2.png": "/static/media/bgShape2.e5721cee1256840ccc76.png",
     "static/media/project3.png": "/static/media/project3.ceaf62793e859f42f6a0.png",
+    "static/media/work2.png": "/static/media/work2.65f5d21efd02b4aad08f.png",
+    "static/media/research.png": "/static/media/research.61212707497df4e9e7f7.png",
     "static/media/project2.png": "/static/media/project2.25c4a23d42dbbeade479.png",
     "static/media/linkedin.png": "/static/media/linkedin.f50654b84fe7b7c32b29.png",
     "static/media/facebook2.png": "/static/media/facebook2.d320d109ae1d44f8d5f6.png",
     "static/media/github.png": "/static/media/github.ddc8947e09397902cb40.png",
     "index.html": "/index.html",
-    "main.5205b89f.css.map": "/static/css/main.5205b89f.css.map",
-    "main.50dc6f05.js.map": "/static/js/main.50dc6f05.js.map",
+    "main.b3ff9b9d.css.map": "/static/css/main.b3ff9b9d.css.map",
+    "main.a73aea85.js.map": "/static/js/main.a73aea85.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5205b89f.css",
-    "static/js/main.50dc6f05.js"
+    "static/css/main.b3ff9b9d.css",
+    "static/js/main.a73aea85.js"
   ]
 }
